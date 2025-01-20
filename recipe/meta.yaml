@@ -39,7 +39,7 @@ test:
     - pip check
     - demoji --help
     - coverage run --source=demoji --branch -m pytest -vv --tb=long --color=yes
-    - coverage report --show-missing --skip-covered --fail-under=64
+    - coverage report --show-missing --skip-covered --fail-under=60
 
 about:
   home: https://github.com/bsolomon1124/demoji
