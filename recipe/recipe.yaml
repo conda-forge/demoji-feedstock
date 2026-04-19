@@ -48,7 +48,7 @@ tests:
     script:
       - demoji --help
       - coverage run --source=demoji --branch -m pytest -vv --tb=long --color=yes
-      - coverage report --show-missing --skip-covered --fail-under=60
+      - coverage report --show-missing --skip-covered --fail-under=100
 
 about:
   summary: Accurately remove and replace emojis in text strings
