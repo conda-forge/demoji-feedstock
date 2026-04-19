@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: demoji
@@ -7,10 +7,10 @@ package:
 source:
   # pypi does not include tests
   url: https://github.com/bsolomon1124/demoji/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 0cde672b31ce04917d4001607406f0d6bbe91942873d780316dc296723e914af
+  sha256: 626eeaedbea9c17e2de1e094e8aeb3eb80ace4138c10d8f32872b1c4fb064ad6
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
